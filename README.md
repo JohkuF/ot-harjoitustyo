@@ -1,1 +1,3 @@
-# ot-harjoitustyo
+# Ohjelmistotekniikka, harjoitustyö
+
+Tarkoituksena on *mahdollisesti* toteuttaa **tasohyppelypeli**.
