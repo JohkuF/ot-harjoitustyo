@@ -1,7 +1,7 @@
 import pygame
 
 from constants import HEIGHT, WIDTH, TILE_SIZE
-from graphics import draw_level, get_sprite_group
+from graphics import draw_level, get_player_sprites
 from sprites import Player
 from world import world
 
@@ -17,7 +17,9 @@ class Game:
         draw_level(self.screen, world)
 
         # Create sprite groups
-        self.all_sprites: pygame.sprite.Group = get_sprite_group(world)
+        # NOTE: 
+        self.players: pygame.sprite.Group = get_player_sprites(world)
+        #self.all_sprites: pygame.sprite.Group = get_sprite_group(world)
 
 
     def run(self):
@@ -29,8 +31,8 @@ class Game:
             # Clear the screen
             self.screen.fill((0, 0, 0))
 
-            self.all_sprites.update()
-            self.all_sprites.draw(self.screen)
+            self.players.update()
+            self.players.draw(self.screen)
 
             pygame.display.flip()
             self.clock.tick(60)
