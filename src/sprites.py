@@ -8,7 +8,7 @@ class Sprite(pygame.sprite.Sprite):
     def __init__(self) -> None:
         super().__init__()
 
-    def update(*args, **kwargs):
+    def update():
         ...
 
 class Player(Sprite):
@@ -22,6 +22,10 @@ class Player(Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
+
+    def update(self):
+        self.rect.x += 1
+        self.rect.y -= 1
         
     
 

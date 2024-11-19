@@ -26,10 +26,13 @@ class Game:
                 if event.type == pygame.QUIT:
                     self.running = False
 
-            self.all_sprites.update(self.screen)
+            # Clear the screen
+            self.screen.fill((0, 0, 0))
+
+            self.all_sprites.update()
             self.all_sprites.draw(self.screen)
 
-            pygame.display.update()
+            pygame.display.flip()
             self.clock.tick(60)
 
 
