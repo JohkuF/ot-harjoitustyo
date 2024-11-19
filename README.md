@@ -2,6 +2,7 @@
 
 Tarkoituksena on *mahdollisesti* toteuttaa **tasohyppelypeli**.
 
-[Laskarit](laskarit/)
-
-[Vaatimusmaarittely.md](dokumentaatio/vaatimusmaarittely.md)
+## Dokumentaatio
+- [Työaikakirjanpito](dokumentaatio/tuntikirjanpito.md)
+- [Vaatimusmaarittely](dokumentaatio/vaatimusmaarittely.md)
+- [Changelog](dokumentaatio/changelog.md)
